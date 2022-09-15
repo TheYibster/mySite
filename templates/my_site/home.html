@@ -24,17 +24,21 @@
             <div class="sidebar">
                 <h2>Navigate</h2>
                 <ul>
-                    <li><a href="#">
+                    <li><a href="/website">
                         <span class="material-symbols-outlined">
                         home
-                        </span>Home</a></i></li>
-                    <li><a href="#">Contact Me</a></li>
+                        </span>Home</a>
+                        </li>
+                    <li><a href="/website/contact">Contact Me</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">GitHub</a></li>
+                    <li><a href="https://github.com/TheYibster" target="_blank">GitHub</a></li>
                 </ul>
             </div>
         </div>
+
         <div class="main_content">
+
+        {% block body_block %}
         <div class="wrapper">
             <div class="section">
                 <h1>Hello, my name is Yibo!</h1>
@@ -70,6 +74,7 @@
                 </p>
             </div>
         </div>
+        {% endblock %}
         </div>
     </body>
 
